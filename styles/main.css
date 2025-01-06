@@ -1,0 +1,96 @@
+/* General styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: #1e1e1e;
+}
+
+.search-category {
+  display: flex;
+  gap: 10px;
+}
+
+#search-input, #category-select {
+  padding: 5px 10px;
+  border-radius: 4px;
+  border: none;
+  font-size: 14px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+.card {
+  background: #2a2a2a;
+  padding: 15px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  max-width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.card-title {
+  font-size: 16px;
+  text-align: center;
+}
+
+.player-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.shaka-video-container {
+  position: relative;
+  width: 90%;
+  max-width: 800px;
+}
+
+#shaka-player {
+  width: 100%;
+  border-radius: 8px;
+}
+
+#close-player {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #ff4c4c;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  padding: 5px 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
