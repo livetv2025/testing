@@ -1,4 +1,4 @@
-const m3uUrl = "https://example.com/your-m3u-file.m3u"; // Replace with your M3U URL
+const m3uUrl = "https://raw.githubusercontent.com/MohammadKobirShah/KobirIPTV/refs/heads/main/KobirIPTV.m3u"; // Replace with your M3U URL
 
 const gridContainer = document.querySelector('.grid-container');
 const searchInput = document.getElementById('search-input');
