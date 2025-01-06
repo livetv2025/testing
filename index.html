@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live TV</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.12.5/controls.min.css">
+</head>
+<body>
+  <header class="header">
+    <h1>Live TV</h1>
+    <div class="search-category">
+      <input type="text" id="search-input" placeholder="Search channels...">
+      <select id="category-select">
+        <option value="all">All Categories</option>
+      </select>
+    </div>
+  </header>
+
+  <main class="grid-container">
+    <!-- Channels will be dynamically loaded here -->
+  </main>
+
+  <div id="player-modal" class="player-modal">
+    <div id="video-container" class="shaka-video-container">
+      <video id="shaka-player" class="shaka-video"></video>
+      <div id="controls" class="shaka-controls"></div>
+    </div>
+    <button id="close-player">✖</button>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.12.5/shaka-player.ui.min.js"></script>
+  <script src="scripts/app.js"></script>
+</body>
+</html>
